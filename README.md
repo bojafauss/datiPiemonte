@@ -6,7 +6,11 @@ Currently supports only data hosted on the Yucca platform.
 # How to install
 
 ```
-devtools::install_github("string here")
+devtools::install_github(
+  repo = "bojafauss/datiPiemonte",
+  subdir = "datiPiemonte"
+)
+
 library(datiPiemonte)
 ```
 

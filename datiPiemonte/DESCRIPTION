@@ -2,8 +2,8 @@ Package: datiPiemonte
 Type: Package
 Title: Easy access to the opendata in the https://www.dati.piemonte.it portal
 Version: 1.0.0
-Author: bojafauss
-Maintainer: bojafauss <https://github.com/bojafauss>
+Author: Bruno Cortese
+Maintainer: Bruno Cortese <13808042+bojafauss@users.noreply.github.com>
 Description: A package to simplify access to the opendata portal of the Piedmont region.
     More or less inspired by the Eurostat R package.
     It currently supports only datasets hosted on the Yucca platform, but feel free to contribute.
