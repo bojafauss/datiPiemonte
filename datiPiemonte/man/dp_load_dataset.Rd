@@ -6,10 +6,14 @@
 To be used if the user wants to avoid manual inspection
 May fail}
 \usage{
-dp_load_dataset(raw_dataset_object)
+dp_load_dataset(raw_dataset_object, delim = ";", ...)
 }
 \arguments{
 \item{raw_dataset_object}{the output of dp_get_dataset}
+
+\item{delim}{the delimiter of the data, if not semicolon}
+
+\item{...}{other parameters to be passed to read_delim}
 }
 \value{
 A tibble
@@ -17,10 +21,10 @@ A tibble
 \description{
 This is a utility for lazy people.
 It takes as input a list outputted by dp_get_dataset and uses the metadata to define the names.
-Columns encoding is guesses.
+Columns encoding is guessed.
 The separator is guessed to be a semicolon, can be wrong.
 If you want to contribute in making this function better, do a pull request.
 }
 \examples{
-dataset_name \%>\% dp_get_dataset \%>\% dp_load_dataset
+if(FALSE){dataset_name \%>\% dp_get_dataset \%>\% dp_load_dataset}
 }

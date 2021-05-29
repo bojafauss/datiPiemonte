@@ -39,3 +39,6 @@ Do NOT hammer the site / api.
 Make a pull request.
 I will set up some Github actions eventually.
 
+Your code should be able to pass the build-helper.sh file without failing. ;)
+
+

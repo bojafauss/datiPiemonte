@@ -7,9 +7,9 @@
 dp_get_dataset(set_name, set_url = "")
 }
 \arguments{
-\item{data_set_name}{a string}
+\item{set_name}{a string}
 
-\item{data_set_url}{a string, optional}
+\item{set_url}{a string, optional}
 }
 \value{
 A list with a csv file and a json of extra info
@@ -17,4 +17,9 @@ A list with a csv file and a json of extra info
 \description{
 Given a dataset name, and optionally the url in the dati.piemonte portal it downloads the raw data.
 It is left to the user what to do with those.
+}
+\examples{
+if(FALSE){dp_get_dataset('name_here')}
+if(FALSE){dp_get_dataset('name_here', 'url_here')}
+
 }

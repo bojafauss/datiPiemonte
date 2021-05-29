@@ -8,7 +8,7 @@ Description: A package to simplify access to the opendata portal of the Piedmont
     More or less inspired by the Eurostat R package.
     It currently supports only datasets hosted on the Yucca platform, but feel free to contribute.
     I wrote it real quick, so there are a lot of dependencies that could be removed.
-License: MIT License
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 

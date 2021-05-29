@@ -6,6 +6,9 @@
 \usage{
 dp_get_page_url(datasetname)
 }
+\arguments{
+\item{datasetname}{the name of the dataset, as it appears in the catalogue}
+}
 \value{
 A string
 }
@@ -14,6 +17,5 @@ This is an internal functionality.
 Given the name of a dataset it downloads the catalogue and check for the corresponding url.
 }
 \examples{
-
-dp_get_page_url("datasetname from dp_list_datasets()")
+if(FALSE){dp_get_page_url("datasetname from dp_list_datasets()")}
 }

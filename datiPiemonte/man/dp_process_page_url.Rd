@@ -6,6 +6,9 @@
 \usage{
 dp_process_page_url(page_url)
 }
+\arguments{
+\item{page_url}{the url of the dataset page on the datipiemonte.it portal}
+}
 \value{
 A list with 3 urls
 }
@@ -15,5 +18,5 @@ Given a page url it creates urls to download data and metadata.
 Currently only supports the YUCCA hosted datasets.
 }
 \examples{
-dp_process_page_url(page_url)
+if(FALSE){dp_process_page_url(page_url)}
 }

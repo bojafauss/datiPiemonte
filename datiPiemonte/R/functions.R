@@ -33,11 +33,12 @@ dp_list_datasets <- function(){
 #' This is an internal functionality.
 #' Given the name of a dataset it downloads the catalogue and check for the corresponding url.
 #'
+#' @param datasetname the name of the dataset, as it appears in the catalogue
+#'
 #' @return A string
 #'
 #' @examples
-#'
-#' dp_get_page_url("datasetname from dp_list_datasets()")
+#' if(FALSE){dp_get_page_url("datasetname from dp_list_datasets()")}
 
 dp_get_page_url <- function(datasetname){
   catalogue <- subset(dp_list_datasets(), data_name == datasetname)
@@ -56,10 +57,12 @@ dp_get_page_url <- function(datasetname){
 #' Given a page url it creates urls to download data and metadata.
 #' Currently only supports the YUCCA hosted datasets.
 #'
+#' @param page_url the url of the dataset page on the datipiemonte.it portal
+#'
 #' @return A list with 3 urls
 #'
 #' @examples
-#' dp_process_page_url(page_url)
+#' if(FALSE){dp_process_page_url(page_url)}
 
 dp_process_page_url <- function(page_url){
   data_set_string <- stringr::str_extract(page_url, '(?<=smartdatanet.it_)(.*)')
@@ -83,14 +86,14 @@ dp_process_page_url <- function(page_url){
 #'
 #' @export
 #'
-#' @param data_set_name a string
-#' @param data_set_url a string, optional
+#' @param set_name a string
+#' @param set_url a string, optional
 #'
 #' @return A list with a csv file and a json of extra info
 #'
 #' @examples
-#' dp_get_dataset('name_here')
-#' dp_get_dataset('name_here', 'url_here)
+#' if(FALSE){dp_get_dataset('name_here')}
+#' if(FALSE){dp_get_dataset('name_here', 'url_here')}
 #'
 dp_get_dataset <- function(set_name, set_url = ""){
 
@@ -128,7 +131,7 @@ dp_get_dataset <- function(set_name, set_url = ""){
 #' @param ... other parameters to be passed to read_delim
 #'
 #' @examples
-#' dataset_name %>% dp_get_dataset %>% dp_load_dataset
+#' if(FALSE){dataset_name %>% dp_get_dataset %>% dp_load_dataset}
 
 dp_load_dataset <- function(raw_dataset_object, delim = ';', ...){
   dataset_metadata <- raw_dataset_object$raw_info %>%
