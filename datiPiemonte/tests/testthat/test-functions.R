@@ -12,7 +12,7 @@ test_that('The system loads the catalogue', {
 
 test_that('The package retrieves urls',{
   df <- dp_list_datasets()
-  n <- sample(1:nrow(df), 1)
+  n <- 1 #sample(1:nrow(df), 1)
   data_name <- df$data_name[n]
   data_url <- df$data_url[n]
 
@@ -26,7 +26,7 @@ test_that('The package retrieves urls',{
 
 test_that('URLs are processed', {
   df <- dp_list_datasets()
-  n <- sample(1:nrow(df), 1)
+  n <- 1 #sample(1:nrow(df), 1)
   data_name <- df$data_name[n]
   data_url <- df$data_url[n]
   urls <- dp_process_page_url(data_url)
@@ -41,7 +41,7 @@ test_that('URLs are processed', {
 
 test_that('A dataset is retrieved', {
   df <- dp_list_datasets()
-  n <- sample(1:nrow(df), 1)
+  n <- 1 #sample(1:nrow(df), 1)
   data_name <- df$data_name[n]
   data_url <- df$data_url[n]
 
@@ -62,7 +62,7 @@ test_that('A dataset is retrieved', {
 
 test_that('Data can return a table', {
   df <- dp_list_datasets()
-  n <- sample(1:nrow(df), 1)
+  n <- 1 #sample(1:nrow(df), 1)
   data_name <- df$data_name[n]
   data_url <- df$data_url[n]
   data_set <- dp_get_dataset(data_name, data_url)

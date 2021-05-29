@@ -7,21 +7,18 @@ Maintainer: Bruno Cortese <13808042+bojafauss@users.noreply.github.com>
 Description: A package to simplify access to the opendata portal of the Piedmont region.
     More or less inspired by the Eurostat R package.
     It currently supports only datasets hosted on the Yucca platform, but feel free to contribute.
-    I wrote it real quick, so there are a lot of dependencies that would be nice to remove.
+    I wrote it real quick, so there are a lot of dependencies that could be removed.
 License: MIT License
 Encoding: UTF-8
 LazyData: true
 Imports: 
     assertthat,
-    dplyr,
-    glue,
     httr,
     jsonlite,
     magrittr,
     readr,
-    stringr,
-    tibble
+    stringr
 RoxygenNote: 7.1.1
 Suggests: 
-    testthat (>= 3.0.0)
-Config/testthat/edition: 3
+    testthat (>= 3.0.0),
+    tibble
